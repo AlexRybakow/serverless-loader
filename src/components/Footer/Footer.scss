@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'PPFraktionMono';
+  src: local('PPFraktionMono'), url(../../fonts/PPFraktionMono-Regular.otf) format('opentype');
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 20px 20px 35px 20px;
+
+  background-color: #000;
+
+  @media (min-width: 1040px)  {
+    padding: 60px 80px 66px 50px;
+  }
+  &__container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          @media (max-width: 420px)  {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        &__cta {
+          display: flex;
+          flex-direction: column;
+          @media (max-width: 420px)  {
+            padding-left: 50px;
+          }
+    
+          &__text {
+            font-family: PPFraktionMono;
+            font-size: 20px;
+            line-height: 22px;
+            letter-spacing: 0.2px;
+            color: #9F9E9E;
+          }
+        }
+        &__blur {
+          position: absolute;
+          width: 205px;
+          height: 190px;
+          left: calc(50% - 409px/2 + 735.5px);
+          top: 620px;
+          background: #FFD600;
+          filter: blur(145.824px);
+
+          @media (max-width: 1040px)  {
+           display: none;
+          }
+        }
+        &__button {
+          font-family: PPFraktionMono;
+          padding: 10px 60px;
+          font-size: 16px;
+          line-height: 20px;
+          background-color: #ffffff;
+          color: #000000;
+          font-weight: bold;
+          border-radius: 10px;
+
+          @media (max-width: 420px)  {
+            margin-top: 20px;
+          }
+        }
+
+  &__logo {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+
+    &__conatainer {
+      padding: 0 70px 70px 70px;
+      text-align: center;
+      border-bottom: 1px solid rgba(159, 158, 158, 0.24);
+    }
+  }
+}
+

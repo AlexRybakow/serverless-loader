@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'PPFraktionMono';
+  src: local('PPFraktionMono'), url(../../fonts/PPFraktionMono-Regular.otf) format('opentype');
+}
+
+.header {
+  &__logo {
+    font-family: 'Inter';
+    font-weight: 800;
+    color: #000;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 28px 50px;
+    box-shadow: 0px -2px 4px 0px #00000040; 
+    background-color: #000;
+  }
+
+  &__icon-link {
+    width: 18px;
+    height: 18px;
+    background-image: url(../MobileMenu/assets/square.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: 576px)  {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    font-family: PPFraktionMono;
+    color: #ffffff;
+    transition: border-bottom 0.2s ease-in-out;
+
+    &:hover {
+      border-bottom: 1px solid #000;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @media (min-width: 576px)  {
+      display: flex;
+      gap: 60px;
+      margin-right: 20px;
+    }
+
+    &__list {
+      @media (min-width: 576px)  {
+        display: flex;
+        gap: 47px;
+        align-items: center;
+      }
+    }
+
+  }
+}

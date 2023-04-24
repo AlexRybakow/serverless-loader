@@ -1,0 +1,82 @@
+
+@font-face {
+  font-family: 'PPFormula';
+  src: local('PPFormula'), url(../../../fonts/PPFormula-NarrowRegular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'PPFraktionMono';
+  src: local('PPFraktionMono'), url(../../../fonts/PPFraktionMono-Regular.otf) format('opentype');
+}
+
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #000000;
+  padding: 20px 20px 30px;
+
+  @media (min-width: 1040px)  {
+    padding: 50px 0px;
+  }
+ 
+  &__header {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 26px;
+      color: #000000;
+      margin-bottom: 10px;
+
+    @media (min-width: 1040px)  {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 60px;
+      letter-spacing: 0em;
+    }
+  }
+  
+  &__text {
+    font-family: PPFraktionMono;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    color: #717171;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    margin-left: 0;
+
+    @media (min-width: 1040px)  {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 27px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__container {
+    font-family: PPFormula;
+    font-size: 88px;
+    line-height: 96px;
+    letter-spacing: -0.04em;
+    color: #fff;
+    background-color: #000000;
+    text-transform: uppercase;
+    padding-left: 50px;
+    width: 1168px;
+
+
+    @media (max-width: 1040px)  {
+      font-size: 32px;
+      line-height: 36px;
+      width: 100%;
+    }
+  }
+  &__serverless {
+    background: linear-gradient(90deg, rgba(255, 214, 0, 0.2) 0%, rgba(255, 214, 0, 0) 95.83%);
+    border-left: 4px solid #FFD600;
+  }
+}
