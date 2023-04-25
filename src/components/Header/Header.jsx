@@ -12,9 +12,10 @@ export const Header = ({ openMenu }) => {
         <button type="button" onClick={openMenu} className="header__icon-link" aria-label="Menu"></button>
         <nav className="header__nav">
           <div className="header__nav__list">
-              <a href="#" className="header__item">Upwork</a>
-              <a href="#" className="header__item">Github</a>
-              <a href="#" className="header__item">Linkedin</a>
+              <a href="https://www.upwork.com/ag/serverless/" rel="nofollow" target="_blank" className="header__item">Upwork</a>
+              <a href="https://github.com/ServerlessTeam" rel="nofollow" target="_blank" className="header__item">Gitlab</a>
+              <a href="https://linkedin.com/company/serverless-team" rel="nofollow" target="_blank" className="header__item">Linkedin</a>
+              <a href="https://www.instagram.com/serverless.team/" rel="nofollow" target="_blank" className="header__item">Instagram</a>
           </div>
         </nav>
       </div>

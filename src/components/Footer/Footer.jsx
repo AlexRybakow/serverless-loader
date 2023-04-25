@@ -16,7 +16,7 @@ export const Footer = () => {
         <p className="footer__cta__text">Let's talk about your idea right now.</p>
       </div>
       <div className="footer__btn-block">
-      <button className="footer__button">schedule a call</button>
+      <a href="https://calendly.com/kozak_serverless" rel="nofollow" target="_blank" className="footer__button">schedule a call</a>
       </div>
       <img src={blur} alt="blur" className="footer__blur"/>
       </div>

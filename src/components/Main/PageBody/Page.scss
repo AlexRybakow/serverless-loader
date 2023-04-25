@@ -9,6 +9,12 @@
   src: local('PPFraktionMono'), url(../../../fonts/PPFraktionMono-Regular.otf) format('opentype');
 }
 
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
 .contactUs {
   display: flex;
   flex-direction: column;
@@ -16,8 +22,12 @@
   background-color: #000000;
   padding: 20px 20px 30px;
 
-  @media (min-width: 1040px)  {
+  @media (min-width: 1280px)  {
     padding: 50px 0px;
+  }
+
+  @media (min-width: 1040px) and (max-width: 1290px) {
+    padding-bottom: 10px;
   }
  
   &__header {
@@ -74,9 +84,31 @@
       line-height: 36px;
       width: 100%;
     }
+    @media (min-width: 1040px) and (max-width: 1280px) {
+      font-size: 75px;
+      line-height: 78px;
+      width: 100%;
+      overflow: hidden;
+    }
   }
   &__serverless {
     background: linear-gradient(90deg, rgba(255, 214, 0, 0.2) 0%, rgba(255, 214, 0, 0) 95.83%);
-    border-left: 4px solid #FFD600;
+    // border-left: 4px solid #FFD600;
+
+    &:before {
+      content: "";
+      width: 4px;
+      height: 80px;
+      background: #FFD600;
+      display: inline-block;
+      animation: cursor-blink 1.5s steps(2) infinite;
+
+      @media (max-width: 600px)  {
+        height: 30px;
+      }
+      @media (min-width: 600px)and (max-width: 1040px)  {
+        height: 40px;
+      }
+    }
   }
 }
