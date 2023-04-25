@@ -13,7 +13,7 @@
 
   background-color: #181819;
   @media (min-width: 1040px)  {
-    padding: 60px 80px 66px 50px;
+    padding: 20px 5px 10px 50px;
   }  
   &__container {
           display: flex;
@@ -31,6 +31,13 @@
           @media (max-width: 420px)  {
             padding-left: 50px;
           }
+          @media (min-width: 1040px)  {
+            position: absolute;
+            width: 532px;
+            height: 44px;
+            left: 64px;
+            top: 575px;
+          }
     
           &__text {
             font-family: PPFraktionMono;
@@ -41,14 +48,13 @@
           }
         }
         &__blur {
-          position: absolute;
-          width: 205px;
-          height: 190px;
-          left: calc(50% - 409px/2 + 735.5px);
-          top: 620px;
-          background: #FFD600;
-          filter: blur(145.824px);
-
+          // position: absolute;
+          // width: 409px;
+          // height: 406px;
+          // left: calc(50% - 409px/2 + 735.5px);
+          // top: 620px;
+          // background: #FFD600;
+          // filter: blur(145.824px);
           @media (max-width: 1040px)  {
            display: none;
           }
@@ -66,6 +72,13 @@
           @media (max-width: 420px)  {
             margin-top: 20px;
           }
+          @media (min-width: 1040px)  {
+            position: absolute;
+            width: 267px;
+            height: 40px;
+            left: 1020px;
+            top: 585px;
+           }
         }
 
   &__logo {
@@ -75,7 +88,7 @@
     line-height: 43px;
 
     &__conatainer {
-      padding: 0 70px 70px 70px;
+      padding: 0 70px 30px 70px;
       text-align: center;
       border-bottom: 1px solid rgba(159, 158, 158, 0.24);
     }
