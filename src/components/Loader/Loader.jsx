@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Loader.scss'
 import { Main } from '../Main/PageBody/Page';
 import { Footer } from '../Footer/Footer';
 import { MobileMenu } from '../MobileMenu/MobileMenu';
@@ -21,9 +20,6 @@ export const Loader = () => {
   return (
       <section className="loader__text">
         <Header openMenu={handleOpenMenu} />
-        {/* <p>
-        // serverless.team is loading...
-      </p> */}
         <MobileMenu isMenuOpened={menuOpened} closeMenu={handleCloseMenu} />
         <Main />
         <Footer />

@@ -10,12 +10,11 @@
   flex-wrap: wrap;
   overflow: hidden;
   padding: 20px 20px 35px 20px;
-
+  height: 26vh;
   background-color: #181819;
   @media (min-width: 1020px)  {
     padding: 10px 0 0 50px;
     border-top: 1px solid rgba(159, 158, 158, 0.24);
-    height: 26vh;
   }  
   &__container {
           display: flex;
@@ -43,12 +42,19 @@
             left: 64px;
             top: 545px;
           }
-          @media (min-width: 1300px)  {
+          @media (min-width: 1300px) and (max-width: 1380px)  {
             position: absolute;
             width: 532px;
             height: 44px;
             left: 64px;
-            top: 610px;
+            top: 575px;
+          }
+          @media (min-width: 1380px)  {
+            position: absolute;
+            width: 532px;
+            height: 44px;
+            left: 64px;
+            top: 630px;
           }
     
           &__text {
@@ -98,12 +104,19 @@
             left: 1000px;
             top: 580px;
            }
-           @media (min-width: 1380px) {
+           @media (min-width: 1380px) and (max-width: 1445px) {
             position: absolute;
             width: 267px;
             height: 40px;
             left: 1180px;
             top: 614px;
+           }
+           @media (min-width: 1445px) and (min-height: 735px){
+            position: absolute;
+            width: 267px;
+            height: 40px;
+            left: 1109px;
+            top: 634px;
            }
         }
 }
