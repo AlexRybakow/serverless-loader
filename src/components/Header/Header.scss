@@ -5,9 +5,11 @@
 
 .header {
   &__logo {
-    font-family: 'Inter';
-    font-weight: 800;
-    color: #000;
+    position: absolute;
+    left: 7.8%;
+    right: 86.7%;
+    top: 33.96%;
+    bottom: 32.71%;
   }
 
   &__container {

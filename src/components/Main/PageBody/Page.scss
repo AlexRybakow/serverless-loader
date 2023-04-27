@@ -23,11 +23,13 @@
   padding: 20px 20px 30px;
 
   @media (min-width: 1280px)  {
-    padding: 20px 0px;
+    padding-top: 20px;
+    height: 64vh;
   }
 
-  @media (min-width: 1040px) and (max-width: 1290px) {
+  @media (min-width: 1020px) and (max-width: 1290px) {
     padding-bottom: 10px;
+    height: 63vh;
   }
   
   &__text {
@@ -44,10 +46,14 @@
     margin-left: 0;
 
     @media (min-width: 1040px)  {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 27px;
-      margin-bottom: 50px;
+      position: absolute;
+      // width: 306px;
+      height: 16px;
+      left: 20px;
+      top: 128px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
     }
   }
 
@@ -62,8 +68,7 @@
     background-clip: text;
     text-fill-color: transparent;
     text-transform: uppercase;
-    padding-left: 50px;
-    width: 1168px;
+    // padding-left: 50px;
 
 
     @media (max-width: 1040px)  {
@@ -71,23 +76,34 @@
       line-height: 36px;
       width: 100%;
     }
+
+    @media(min-width: 1040px) {
+      position: absolute;
+      width: 1168px;
+      height: 286px;
+      left: 62px;
+      top: 200px;
+    }
     @media (min-width: 1040px) and (max-width: 1280px) {
       font-size: 75px;
       line-height: 78px;
-      width: 100%;
+      // width: 100%;
       overflow: hidden;
     }
   }
   &__serverless {
-    background: linear-gradient(90deg, rgba(255, 214, 0, 0.2) 0%, rgba(255, 214, 0, 0) 95.83%);
+    background: linear-gradient(90deg, rgba(248, 155, 102, 0.2) 0%, rgba(253, 239, 94, 0) 95.83%);
     display: inline-block;
+
+    @media (min-width: 1040px) {
     height: 85px;
+    }
 
     &:before {
       content: "";
       width: 4px;
       height: 80px;
-      background: #FFD600;
+      background: #E46F47;;
       display: inline-block;
       animation: cursor-blink 1.5s steps(2) infinite;
 

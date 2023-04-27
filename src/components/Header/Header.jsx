@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import './Header.scss';
-import logo from './assets/logo.png';
+import logo from './assets/logotype.png';
 
 export const Header = ({ openMenu }) => {
   return (

@@ -6,10 +6,6 @@ import blur from './assets/Blur.png'
 export const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__logo__conatainer">
-        <a href="#" className="footer__logo">
-        </a>
-      </div>
       <div className="footer__container">
       <div className="footer__cta">
         <p className="footer__cta__text">Don't want to wait for our site launch?</p>
