@@ -22,6 +22,7 @@
   background-color: #181819;
   padding: 20px 20px 30px;
   height: 64vh;
+  width: 100vw;
 
   @media (min-width: 1280px)  {
     padding-top: 20px;
@@ -85,9 +86,9 @@
       top: 200px;
     }
     @media (min-width: 1040px) and (max-width: 1280px) {
-      font-size: 75px;
-      line-height: 78px;
-      // width: 100%;
+      font-size: 82px;
+      line-height: 86px;
+      width: 100%;
       overflow: hidden;
     }
   }
