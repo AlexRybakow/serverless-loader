@@ -73,10 +73,18 @@
     // padding-left: 50px;
 
 
-    @media (max-width: 1040px)  {
+    @media (max-width: 600px)  {
       font-size: 32px;
       line-height: 36px;
       width: 100%;
+    }
+
+    @media (min-width: 600px) and (max-width: 1040px)  {
+      font-size: 68px;
+      line-height: 72px;
+      width: 100%;
+      position: absolute;
+      top: 30%;
     }
 
     @media(min-width: 1040px) {
