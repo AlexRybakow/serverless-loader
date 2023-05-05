@@ -71,14 +71,22 @@
     text-fill-color: transparent;
     text-transform: uppercase;
     // padding-left: 50px;
-    @media (max-width: 370px) {
-     font-size: 12px;
+    // @media (max-width: 370px) {
+    //  font-size: 12px;
      
-    }
+    // }
     @media (min-width: 370px) and (max-width: 1040px)  {
       font-size: 48px;
       line-height: 53px;
       width: 100%;
+    }
+
+    @media (min-width: 600px) and (max-width: 1040px)  {
+      font-size: 68px;
+      line-height: 72px;
+      width: 100%;
+      position: absolute;
+      top: 30%;
     }
 
     @media(min-width: 1040px) {
