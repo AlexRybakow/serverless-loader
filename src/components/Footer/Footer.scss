@@ -23,7 +23,7 @@
           align-items: center;
           justify-content: space-between;
 
-          @media (max-width: 420px)  {
+          @media (max-width: 800px)  {
             display: flex;
             flex-direction: column;
           }
@@ -34,8 +34,25 @@
         &__cta {
           display: flex;
           flex-direction: column;
-          @media (max-width: 420px)  {
-            padding-left: 50px;
+          @media (max-width: 360px) {
+            position: absolute;
+            top: 470px;
+            left: 16px;
+          }
+          @media (min-width:360px) and (max-width: 390px)  {
+            position: absolute;
+            width: 340px;
+            height: 54px;
+            left: 16px;
+            top: 486px;
+          }
+
+          @media (min-width: 390px) and (max-width: 420px)  {
+            position: absolute;
+            width: 340px;
+            height: 54px;
+            left: 16px;
+            top: 550px;
           }
           @media (min-width: 1040px) and (max-width: 1380px)  {
             position: absolute;
@@ -58,6 +75,10 @@
             line-height: 22px;
             letter-spacing: 0.2px;
             color: #9F9E9E;
+
+            @media (max-width: 420px)  {
+              font-size: 16px;
+            }
           }
         }
         &__blur {
@@ -82,8 +103,47 @@
           font-weight: bold;
           border-radius: 10px;
 
-          @media (max-width: 420px)  {
-            margin-top: 20px;
+          @media (max-width: 350px)  {
+            position: absolute;
+            top: 660px;
+          }
+
+          @media (max-width: 390px)  {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+
+            position: absolute;
+            width: 340px;
+            height: 40px;
+            left: 16px;
+            top: 584px;
+          }
+          @media (min-width: 390px) and (max-width: 420px)  {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            position: absolute;
+            width: 340px;
+            height: 40px;
+            left: 16px;
+            top: 690px;
+          }
+          @media (min-width: 420px) and (max-width: 600px)  {
+            position: absolute;
+            top: 630px;
+            left: 20%;
+          }
+          @media (min-width: 600px) and (max-width: 800px)  {
+            position: absolute;
+            top: 820px;
+            left: 30%
           }
           @media (min-width: 1040px) and (max-width: 1300px)  {
             position: absolute;

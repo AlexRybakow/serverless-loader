@@ -71,11 +71,13 @@
     text-fill-color: transparent;
     text-transform: uppercase;
     // padding-left: 50px;
-
-
-    @media (max-width: 1040px)  {
-      font-size: 32px;
-      line-height: 36px;
+    @media (max-width: 370px) {
+     font-size: 12px;
+     
+    }
+    @media (min-width: 370px) and (max-width: 1040px)  {
+      font-size: 48px;
+      line-height: 53px;
       width: 100%;
     }
 
@@ -116,5 +118,19 @@
         height: 40px;
       }
     }
+  }
+  &__main {
+    @media (max-width: 370px) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+      @media (min-width:370px) and (max-width: 420px) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 53px;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      }
   }
 }

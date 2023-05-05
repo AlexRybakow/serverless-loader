@@ -7,7 +7,7 @@ export const Main = () => {
         // serverless.team is loading...
       </p>
       <section className="contactUs__container">
-       <p>We take care of <span className="contactUs__serverless">serverless</span> development so you can focus <br/> on your business </p>
+       <p className="contactUs__main">We take care of <span className="contactUs__serverless">serverless</span> development so you can focus <br/> on your business </p>
       </section>
     </section>
   )
